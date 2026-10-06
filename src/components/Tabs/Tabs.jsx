@@ -1,4 +1,4 @@
-import cn from "classnames";
+import cn from 'classnames';
 
 export const Tabs = ({ tabs, activeTabId, onTabSelected }) => {
   const activeTab = tabs.find(tab => tab.id === activeTabId) || tabs[0];
@@ -12,7 +12,7 @@ export const Tabs = ({ tabs, activeTabId, onTabSelected }) => {
               <li
                 key={tab.id}
                 data-cy="Tab"
-                className={cn({"is-active": activeTab.id === tab.id})}
+                className={cn({ 'is-active': activeTab.id === tab.id })}
               >
                 <a
                   data-cy="TabLink"
